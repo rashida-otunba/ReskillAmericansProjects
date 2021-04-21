@@ -1,0 +1,248 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+
+@media(orientation:landscape){
+body{
+    background-color: hsl(257, 40%, 49%); 
+    background-image: url("bg-desktop.svg");
+    width: 1440px;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: white; 
+    margin:0px;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 3/3;
+    grid-template-rows: 2/2;
+}
+
+p{
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin-right: 130px;
+}
+
+header{
+
+    grid-column: 1/ span 3;
+    margin-left: 55px;
+margin-right: 45px;
+}
+aside{
+    grid-column: 2/ 1;
+    grid-row: 2/3;
+margin-top: 50px; 
+margin-left: 55px;
+margin-right: 45px;
+}
+
+aside img{
+width: 100%;
+max-width: 1000px;
+}
+
+footer{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+main{
+grid-column:3/4 ;
+grid-row:2/2;
+margin-top: 40px; 
+margin-left: 45px;
+margin-right: 65px;
+width: 70%;
+
+}
+
+button{
+    font-family: 'Poppins';
+    font-weight: 400;
+    border-radius: 60px;
+    padding-top: 15px; 
+    padding-bottom: 15px;;
+    padding-left: 60px;
+    padding-right: 60px;
+   border-style: none;
+   box-shadow: 3px 5px 5px hsl(257, 38%, 18%);
+    background-color: white;
+    color: hsl(257, 40%, 49%) ;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+footer{
+    width: 70%;
+    margin-left: 40%;
+}
+
+footer img{
+    background-color: whitesmoke;
+    height: 40px;
+   place-items: flex-end;
+   border-radius: 60px;
+   width: 35px;
+   margin-left: 5px;
+}
+footer img:hover{
+background-color: hsl(300, 69%, 71%);
+}
+
+}
+
+
+
+
+
+
+@media(orientation:portrait){
+
+    body{
+        background-image: url("bg-mobile.svg");
+        background-size: contain;
+        width: 375px;
+        display: grid;
+       grid-template-columns: 1fr ;
+       grid-template-rows: 100px 250px 300px 100px;
+        background-color: hsl(257, 40%, 49%); 
+        margin: auto;
+    }
+
+    .container{
+        
+    }
+    
+    h1{
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: white; 
+        margin:0px;
+        text-align: center;
+    }
+
+    p{
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #logo img{
+        grid-column:  1/2;
+        grid-row: 1/2;
+        width: 40%;
+        margin-left: 2px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    aside{
+        margin-bottom:20px;
+    }
+
+    aside img{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        max-width: 1000px;
+        }
+
+    main{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    button{
+        font-family: 'Poppins';
+        font-weight: 400;
+        border-radius: 60px;
+        padding-top: 15px; 
+        padding-bottom: 15px;;
+        padding-left: 60px;
+        padding-right: 60px;
+       border-style: none;
+       box-shadow: 3px 5px 5px hsl(257, 38%, 18%);
+        background-color: white;
+        color: hsl(257, 40%, 49%) ;
+        margin-top: 10px;
+        margin-left: 25%;
+    }
+    
+    button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+
+footer{
+    margin-top: 35px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    footer img{
+        rid-column: 1/2;
+        grid-row: 4/5;
+        background-color: white;
+        height: 40px;
+       place-items: flex-end;
+       border-radius: 40px; 
+       width:35px; 
+       padding:5px;
+       padding-right: 7px;
+       padding-left:7px;
+       
+    }
+
+    footer img:hover{
+        background-color: hsl(300, 69%, 71%);
+    }
+
+}
